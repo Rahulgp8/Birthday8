@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Rupsha 🎂</title>
+  <style>
+    body {
+      background: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 8vw;
+      color: #ff3366;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 60vw;
+      max-width: 300px;
+      height: auto;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+    p {
+      margin-top: 20px;
+      color: #ff6699;
+      font-size: 4vw;
+      max-width: 90%;
+    }
+
+    /* Media Query for larger screens */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday Rupsha ❤️ 🎉</h1>
+  <img src="/img/cake.png" alt="Birthday Cake" onclick="cutCake()">
+  <p>Sona, Please touch the cake to cut it 🍰</p>
+
+  <script>
+    function cutCake() {
+      alert("Yayy! Cake is cut! 🎂🍰");
+      window.location.href = "page2.html";
+    }
+  </script>
+</body>
+</html>
